@@ -1,0 +1,260 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+}
+.hero{
+     /*1*/
+     background: linear-gradient(to right, rgba(19, 1, 90, 0.808) 15%, rgba(235, 232, 232, 0.753)), url(../img/hero.jpeg);
+     /*/1*/
+     height: 100vh;
+     background-repeat: no-repeat;
+     background-position: top center;
+     background-size: cover;
+     background-attachment: fixed;
+     width: 100%;
+}
+
+.bar{
+     background: rgba(0, 0, 0, 0.685);
+     width: 100vw;
+     height: 6vh;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+
+    
+}
+.menu-ul{
+     display: flex;
+     
+}
+.item{
+     list-style: none;
+     margin-right: 15px;
+     
+}
+.menu-link{
+     color: rgba(238, 234, 234, 0.842);
+     text-decoration: none;
+     font-family: 'Baloo Bhaina 2', cursive;
+}
+i{
+     margin-right: 5px;
+     font-size: 18px;
+}
+.menu-container{
+     background: rgba(17, 16, 16, 0);
+     height: 10vh;
+}
+.link2{
+     color: #fff;
+     font-weight: bold;
+}
+.startup{
+     font-size: 30px;
+     font-weight: bold;
+     font-family: 'Dancing Script', cursive;
+}
+/*/Cambios----------------------------------
+-----------------------------------------
+-------------------------------------
+----------------------------------*/
+.legend{
+     position: absolute;
+     width: 50vw; 
+     top: 50vh;
+     left: 10vw;
+     color: #fff;
+}
+.contenedor{
+     background: rgba(251, 251, 251, 0.041);
+     padding: 20px;
+     width: 90%;
+}
+.legend-title{
+     width: 65%;
+     font-size: 30px;
+     margin-bottom: 10px;
+}
+.btn{
+     display: inline-block;
+     text-decoration: none;
+     color: #fff;
+     border:solid 1px #fff ;
+     padding: 8px 18px;
+     border-radius: 15px;
+}
+.read{
+     margin-top:10px ;
+}
+.read:hover{
+     background: rgba(255, 253, 253, 0.26);
+}
+
+/*Main*/
+.contenido{
+     width: 100vw;
+     display: flex;
+     justify-content: center;
+}
+.container{
+     width: 85vw;
+}
+.description{
+     width: 100%;
+     height: 25vh;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+}
+.description-title{
+     margin-top: 35px;
+     margin-bottom: 10px;
+     font-size: 25px;
+}
+.description-content{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.description-text{
+     width: 70%;
+}
+.description-text::after{
+     content: '';
+     display: block;
+     width: 25%;
+     margin: 25px auto;
+     border: solid 2px rgb(120, 152, 238);
+}
+.cards{
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+}
+.card{
+     border: solid 1px rgba(172, 172, 172, 0.589);
+     padding: 8px;
+     background: rgba(226, 226, 226, 0.301);
+     border-radius: 5px;
+     flex: 0 1 calc(33% - 1rem);
+     border-bottom:solid 5px rgba(0, 0, 0, 0.842) ;
+}
+@media screen and (max-width: 450px) {
+     .cards{
+          flex-direction: column;
+     }
+}
+.image{
+     height: 200px;
+     position: relative;
+}
+.circle{
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background: rgba(0, 0, 0, 0.253);
+     display: flex;
+     justify-content: center;
+     overflow: hidden;
+}
+.child-circle{
+     position: absolute;
+     bottom: -100%;
+     background: rgb(40, 166, 224);
+     color: #fff;
+     width: 45px;
+     height: 45px;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: all ease-in-out .6s;
+}
+.image:hover .child-circle{
+     bottom: 40%;
+     transition: all ease-in-out .6s;
+}
+.img1{
+     background: url(../img/1.jpg);
+}
+.img2{
+     background: url(../img/2.jpg);
+}
+.img3{
+     background: url(../img/1.jpg);
+}
+.desc{
+     margin-top: 20px;
+     text-align: center;
+     background: rgba(209, 207, 207, 0.411);
+     padding: 20px;
+}
+.d-title{
+     font-size: 20px;
+     font-family: 'Baloo Bhaina 2', cursive;
+}
+.d-text{
+     font-size: 20px;
+     font-family: 'Dancing Script', cursive;
+}
+.description2{
+     margin-top: 45px;
+     margin-bottom: 20px;
+}
+/*info*/
+.info{
+     background: rgb(62, 108, 207);
+}
+.c2{
+     flex: 0 1 calc(25% - 1rem);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     border-radius: 25px;
+}
+.icono{
+     display: flex;
+     height: 100px;
+     width: 100px;
+     background: rgba(228, 225, 225, 0.767);
+     color: rgb(76, 79, 236);
+     border-radius: 50%;
+     justify-content: center;
+     align-items: center;
+     border: solid 3px rgb(76, 79, 236);
+     font-size: 40px;
+}
+.icon{
+     height: 110px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.desc2{
+     margin-top: 10px;
+}
+.footer{
+     height: 20vh;
+     margin-top: 30px;
+     background-image: radial-gradient( circle 801px at 4.2% 16.4%,  rgb(76, 79, 236) 0%, rgba(104,211,218,0.99) 88.8% );
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     
+}
+.f-info{
+     text-align: right;
+}
+.f-item{
+     padding: 0;
+     font-family: 'Baloo Bhaina 2', cursive;
+     list-style:none;
+     font-weight: bold;
+     color:rgb(14, 1, 56) ;
+}
+.f-menu .menu-link i{
+     font-size: 35px;
+}
